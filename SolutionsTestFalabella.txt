@@ -1,0 +1,155 @@
+﻿1.- Dado el siguiente escenario:
+	Mockear ambiente y endpoint para esta prueba.
+	Dentro de los servicios digitales de banco falabella, se encuentra la revisión del estado de cuenta del cliente, 
+	los productos que tiene asignado, puntos acumulados, etc. De estos servicios se necesita realizar pruebas de contrato a la API que conecta 
+	el sistema de información de datos con la interfaz que maneja el cliente.
+	La API arroja el siguiente archivo JSON:
+	
+	{
+		Dato_cliente: {
+			Nombre: string,
+			Apellido: string,
+			Direccion: string,
+			Email: string,
+			Telefono: number,
+			RUT: number
+		},
+		Dato_perfil: {
+			Cuenta_ppal: number,
+			Tipo_cliente: string,
+			Tarjeta_debito: number
+		},
+		Dato_Sucursal: {
+			Sucursal_nro: number,
+			Ejecutivo: string,
+			Telefono_ejec: number,
+			Direccion_suc: string
+		},
+		Dato_productos: {
+			Tiene_prod: boolean,
+			Tipo_producto: [
+				Consumo,
+				Hipotecario,
+				Linea_emergencia,
+				Linea_sobregiro,
+				],
+			Puntos: number,
+			Tarjeta_credito: number
+		},
+		Datos_seguros: {
+			Tiene_prod: boolean,
+			SOAP: string,
+			Seguro_vehiculo: string,
+			Seguro_fraude: string,
+			Seguro_hogar: string,
+			Seguro_vida: string
+		}
+		Datos_fondos: {
+			Fondo_mutual: string,
+			Ahorro_previsional: number,
+			ctaRentaDiaria: string
+		}
+		Datos_penalizaciones: {
+			InteresesMora_Sobregiro: number,
+			InteresMora_TarjetaCredito: number,
+			InteresMora_Consumo: number,
+			InteresMora_Hipotecario: number
+		}
+	}
+	
+1-Validar la estructura del Json.
+2-Validar respuesta 200.
+3-Validar que los tipos de datos sean correctos.
+4-Validar Mensaje OK.
+5-Validar que el formato sea JSON.
+6-Validar que RUT sea un número.
+
+
+https://dev.to/charanrajgolla/json-schema-validation-in-postman-using-external-json-files-1jnc
+
+
+2.- Desde la siguiente URL https://restcountries.eu/#api-endpoints-name, 
+	tomar el endpoint https://restcountries.eu/rest/v2/name/{name} y realizar las validaciones que se consideren necesarias, 
+	se deben escribir minimo 6 tests
+
+
+1-Validar response code 200
+2-Validar el tiempo de respuesta es inferior a 500 ms.
+3-Validar que el Content-Type header se encuentra presente
+4-Validar que el response es un tipo de dato Array
+5-Validar que algun objeto contenga el valor(united states minor outlying islands) en el atributo name
+6-Validar que el atributo language se encuentre disponible para el primer objeto.
+
+
+
+A continuación, explique con sus propias palabras los siguientes conceptos:
+
+1. Pruebas de Contrato
+	Nos permiten verificar los esquemas de solicitud y de respuesta de una API y su comportamiento. Que información esta retornando un determinado endpoint
+	Este tipo de prueba se puede realizar cuando se comieza con la construcción de una app antes de engancharse al backend
+
+2. API Rest.
+	Es un conjunto de reglas y especificaciones. Es la manera más optima para poder conectarse por medio del protocolo http a un servicio en especifico
+	Nos permite utlizar las operaciones basicas tales como POST, GET PUT y DELETE. Por medio de la URI tenemos acceso a cada recurso
+	
+3. Integracion Continua.
+	Es la manera de facilitar el despligue de software, a traves de ciclos automatizados(ciclo de compilacion, ciclo de contrucción, ciclo de prueba para detectar fallos o ciclo de performance para medir rendimiento).
+	Ejemplo de herramientas son Jenkins, Maven, Bamboo(Atlassian)
+
+4. Despliegue Continuo.
+	Es una extensión de la anterior(Integración continua) pero concierne las etapas de despliegue hasta producción. Ejemplo de ello son cuando los desarrolladores realizan variados cambios que tienen que ser expuestos desde ya en producción.
+	Por ende recurren a este metódologia que permite de manera eficiente y automatizada el despliege de los nuevos cambios en el software en un ambiente de producción
+
+5. Mencione algunas herramientas para realizar pruebas a API y Web Services.
+	R- Para realizar pruebas de API se puede usar Postman. Y para pruebas de WebServices se puede utilizar SoapUI
+	
+	
+3.- Esta sección es para validar sus conocimientos sobre javascript:
+
+	function Sumar(a,b) {
+		return a + b;
+	}
+	function Restar(a,b) {
+		return a - b;
+	}
+	function Dividir(a,b){
+		return a/b;
+	}
+	function Producto(a,b) {
+		var c = 20;
+		return a*b*c;
+	}
+
+	Obtener en consola los resultados de las funciones de arriba.
+	
+	solution:
+	
+	> Sumar(2,3) //  = 5
+	> Restar(10,5) // = 5
+	> Dividir(100,2) // = 50
+	> Producto(2,3) // = 120
+
+	Persona = {
+		nombre: 'Juan',
+		apellido: 'Perez',
+		telefono: 900199703,
+		email: 'juan.perez@gmail.com'
+	}
+
+	Realizar una función que obtenga las propiedades del Objeto Persona.
+	
+	solution:
+	
+		for (let property in Persona) {
+		  alert( property );  // nombre, apellido, telefono, email
+		}
+	
+4.- Dado el siguiente Wsdl  http://216.10.245.166:8080/axis2/services/EmployeeManagementService?wsdl
+	Agregar TestSuite con las validaciones que se consideren necesarias, agregar los assertions que se requieran según el request y el response obtenido. 
+	Agregar los assertion en groovy scripting y manuales, mínimo 6 assertions.
+
+	1- Validar mensaje del estado de solicitud cuando se obtiene un empleado en especifico
+	2- Validar el tiempo de respuesta cuando se obtiene un empleado en especifico
+	3- Validar el header de la respuesta cuando se obtiene un empleado en especifico
+	4- 
+	
