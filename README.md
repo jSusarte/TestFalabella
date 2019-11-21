@@ -1,10 +1,10 @@
 # TestFalabella
 A continuación se hace entrega del desarrollo de la prueba.
-Puntos a tener en cuenta antes de su revisión
+Puntos a tener en cuenta antes de su revisión<br>
 
 <h3>Los Ejercicios 1 y 2</h3><br>
- * Los ejercicios 1 y 2 fueron desarrollado mediante la herramienta Postman
- * Para realizar la importación del archivo SolutionEjercicio1y2.postman_collection.json seguir el siguiente enlace:   https://www.soapui.org/docs/postman-collections.html
+ * Los ejercicios 1 y 2 fueron desarrollado mediante la herramienta Postman <br>
+ * Para realizar la importación del archivo SolutionEjercicio1y2.postman_collection.json seguir el siguiente enlace:   https://www.soapui.org/docs/postman-collections.html <br>
  * Para el desarrollo del ejercicio 2 se uso la siguiente herramienta online https://jsonschema.net/, lo cual permitio ordenar el schema y posterior incluirlo en postman asignado a una variable, ademas se incluye el json con sus respectivos valores en el siguiente endpoint: https://api.myjson.com/bins/nhdwe
  
 <h3>Preguntas de desarrollo</h3><br>
