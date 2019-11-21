@@ -5,7 +5,7 @@ Puntos a tener en cuenta antes de su revisión
 <h3>Los Ejercicios 1 y 2</h3><br>
  * Los ejercicios 1 y 2 fueron desarrollado mediante la herramienta Postman
  * Para realizar la importación del archivo SolutionEjercicio1y2.postman_collection.json seguir el siguiente enlace:   https://www.soapui.org/docs/postman-collections.html
- * Para el desarrollo del ejercicio 2 se uso la siguiente herramienta online https://jsonschema.net/, lo cual permitio ordenar el schema y posterior incluirlo en postman asignado a una variable.
+ * Para el desarrollo del ejercicio 2 se uso la siguiente herramienta online https://jsonschema.net/, lo cual permitio ordenar el schema y posterior incluirlo en postman asignado a una variable, ademas se incluye el json con sus respectivos valores en el siguiente endpoint: https://api.myjson.com/bins/nhdwe
  
 <h3>Preguntas de desarrollo</h3><br>
 Las preguntas de desarrollo que anexa los ejercicio 3,4 y ademas la explicación de los conceptos se encuentra en el archivo **SolutionsPreguntasDeDesarrollo.txt**
